@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Navbar } from './Components/Navbar'
 import { Header } from './Components/Header1'
-// import { Header2 } from './Components/Header2'
+import { Header2 } from './Components/Header2'
 import { Footer } from './Components/Footer'
 import { Features } from './Components/Features'
 import { ConsistantUI } from './Components/ConsistantUI'
@@ -20,7 +20,7 @@ function App() {
     <>
      <Navbar/>
      <Header/>
-     {/* <Header2/> */}
+     <Header2/>
      <Features/>
      <ConsistantUI/>
      <CodeDesign/>

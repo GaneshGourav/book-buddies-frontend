@@ -3,6 +3,8 @@ import React from "react";
 import code from "../assets/code.svg";
 import avatar from "../assets/avatar.png";
 import "../App.css";
+import add from "../assets/addIcon.svg";
+import message from "../assets/message.svg";
 export const CodeDesign = () => {
   const data = [
     {
@@ -37,9 +39,20 @@ export const CodeDesign = () => {
 
   return (
     <>
-      <Box  marginTop={"100px"} marginBottom={{base:"300px",sm:"300px",md:"100px",lg:"100px"}}>
-        <Box w={{base:"90%",sm:"90%",md:"40%",lg:"40%"}} margin={"auto"} textAlign={"center"} marginTop={"30px"} marginBottom={{base:"50px",sm:"50px",md:"100px",lg:"100px"}}>
-            <Heading>Code the perfect design for each project using Atomize</Heading>
+      <Box
+        marginTop={"100px"}
+        marginBottom={{ base: "300px", sm: "300px", md: "100px", lg: "100px" }}
+      >
+        <Box
+          w={{ base: "90%", sm: "90%", md: "40%", lg: "40%" }}
+          margin={"auto"}
+          textAlign={"center"}
+          marginTop={"30px"}
+          marginBottom={{ base: "50px", sm: "50px", md: "100px", lg: "100px" }}
+        >
+          <Heading>
+            Code the perfect design for each project using Atomize
+          </Heading>
         </Box>
         <Box
           w={{ base: "90%", sm: "90%", md: "60%", lg: "80%" }}
@@ -50,8 +63,7 @@ export const CodeDesign = () => {
 
           <Box
             position={"absolute"}
-            right={{ base: "13%", sm: "13%", md: "10px", lg: "70px" }}
-            zIndex={1}
+            right={{ base: "auto", sm: "auto", md: "10px", lg: "70px" }}
             top={{ base: "100px", sm: "100px", md: "-15px", lg: "-15px" }}
             gap={"20px"}
             maxHeight={{ base: "300px", sm: "300px", md: "570px", lg: "570px" }}
@@ -82,10 +94,21 @@ export const CodeDesign = () => {
                     borderRadius={" 200px"}
                     padding={"10px 20px 10px 20px"}
                     bg={"#0284FE"}
+                    gap={"8px"}
                   >
                     {el.follow}
+                    <Image src={add} />
                   </Button>
-                  <Button>{el.message}</Button>
+                  <Button
+                    gap={"5px"}
+                    border={"1px solid #d4d7da"}
+                    bg={"white"}
+                    borderRadius={"30px"}
+                  >
+                    {el.message}
+
+                    <Image src={message} w={"30px"} />
+                  </Button>
                 </Box>
               </Box>
             ))}

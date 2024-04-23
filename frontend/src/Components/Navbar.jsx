@@ -13,6 +13,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { TbMenu } from "react-icons/tb";
+import { color } from "framer-motion";
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -65,12 +66,16 @@ export const Navbar = () => {
 
             <Drawer
               isOpen={isOpen}
-              placement="right"
+              placement="top"
               onClose={onClose}
               finalFocusRef={btnRef}
+              h={"20px"}
+              w={"90%"}
+              top={"-40px"}
+           
             >
               <DrawerOverlay />
-              <DrawerContent>
+              <DrawerContent  position={"absolute"} marginTop={"40px"}>
                 <DrawerCloseButton />
 
                 <DrawerBody>
@@ -78,16 +83,16 @@ export const Navbar = () => {
                     display={"flex"}
                     flexDirection={"column"}
                     justifyContent={"space-between"}
-                    alignItems={"center"}
-                    border={"1px solid red"}
-                    gap={"5px"}
+                    alignItems={"left"}
+                    
+                    gap={"10px"}
                     color={"#505256"}
                     fontWeight={"600"}
                   >
-                    <a href="#">Features</a>
-                    <a href="#">Github</a>
-                    <a href="#">For Developers</a>
-                    <Button>Documentation</Button>
+                    <Link href="#" _hover={{color:"black"}}>Features</Link>
+                    <Link href="#" _hover={{color:"black"}}>Github</Link>
+                    <Link href="#" _hover={{color:"black"}}>For Developers</Link>
+                    <Button w={"80%"} _hover={{color:"black"}}>Documentation</Button>
                   </Box>
                 </DrawerBody>
               </DrawerContent>
