@@ -45,7 +45,7 @@ export const Header = () => {
               bg={"#0284FE"}
               color={"white"}
               _hover={"none"}
-              width={{ base: "80%", sm: "80%", md: "15%", lg: "15%" }}
+              width={{ base: "80%", sm: "80%", md: "20%", lg: "15%",xl:"15%" }}
               paddingTop={"25px"}
               paddingBottom={"25px"}
             >
@@ -54,7 +54,7 @@ export const Header = () => {
             <Button
               bg={"white"}
               _hover={"none"}
-              width={{ base: "80%", sm: "80%", md: "15%", lg: "15%" }}
+              width={{ base: "80%", sm: "80%", md: "20%", lg: "15%",xl:"15%" }}
               border={"1px solid #505256 "}
               gap={"5px"}
               paddingTop={"25px"}

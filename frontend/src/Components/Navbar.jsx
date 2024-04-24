@@ -30,11 +30,11 @@ export const Navbar = () => {
               <img src={logo} alt="app_logo" />
             </div>
             <Box
-              display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
+              display={{ base: "none", sm: "none", md: "flex", lg: "flex",xl:"flex" }}
               justifyContent={"space-between"}
               alignItems={"center"}
               gap={"5px"}
-              w={"40%"}
+              w={{sm:"60%",md:"60%",lg:"42%",xl:"42%"}}
               color={"#505256"}
               fontWeight={"600"}
             >

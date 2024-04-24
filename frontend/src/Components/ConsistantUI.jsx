@@ -46,7 +46,7 @@ export const ConsistantUI = () => {
       <Box mt={"2rem"} mb={"2rem"}>
         <Divider bg="gray.700" />
       </Box>
-      <Box display={"flex"} justifyContent={"space-between"} gap={"5rem"}>
+      <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} gap={"5rem"}>
         <Box display={{ base: "none", md: "block" }}>
           <Image src={Circle} alt="img" />
         </Box>
