@@ -76,13 +76,14 @@ export const Header2 = () => {
                   display="flex"
                   justifyContent="center"
                   alignItems="center"
-                  w="50px"
-                  h="50px"
+                  w="40px"
+                  h="40px"
                   boxShadow="rgba(51, 51, 51, 0.24) 0px 3px 5px"
                   borderRadius="50%"
+                  _hover={{ bg: "#ffff", boxShadow: "0 0 2px 1px #c6c2c2" }}
                   overflow="hidden"
                 >
-                  <Image src={icon.iconSymbol} alt="rec" w={"25px"} />
+                  <Image src={icon.iconSymbol} alt="rec" w={"22px"} textAlign={"center"} />
                 </Box>
               ))}
             </Box>

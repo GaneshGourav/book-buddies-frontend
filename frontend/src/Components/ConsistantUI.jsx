@@ -56,7 +56,7 @@ export const ConsistantUI = () => {
             mb={"1rem"}
             fontWeight={600}
             fontSize={{ base: "2.5rem", md: "2.5rem", lg: "3rem" }}
-            fontFamily={"Roboto"}
+            
             color={"#000"}
           >
             Beautiful & consistant UI powered with{" "}
@@ -77,7 +77,7 @@ export const ConsistantUI = () => {
                   mb={"1rem"}
                   fontWeight={600}
                   fontSize={{ base: "1rem", md: "1rem", lg: "1.25rem" }}
-                  fontFamily={"Roboto"}
+                 
                   color={"#000"}
                 >
                   {el.heading}
@@ -86,7 +86,7 @@ export const ConsistantUI = () => {
                 <Text
                   fontWeight={500}
                   fontSize={{ base: "1rem", md: "1rem", lg: "1rem" }}
-                  fontFamily={"Roboto"}
+                
                   color={"#505256"}
                 >
                   {el.desc}

@@ -197,7 +197,7 @@ export const Footer = () => {
           color={"rgba(0, 0, 0, 1)"}
           textAlign={"center"}
         >
-          Designed & Developed by Dharmik Puri Goswami
+          Designed & Developed by Ganesh Kumar
         </Text>
 
         <Box

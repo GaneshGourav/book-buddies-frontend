@@ -87,7 +87,7 @@ export const CodeDesign = () => {
                   borderRadius={"50%"}
                   m={"auto"}
                 />
-                <Text mt={"20px"}>{el.Heading}</Text>
+                <Text mt={"20px"} color={"#000"} fontWeight={500}>{el.Heading}</Text>
                 <Text mt={"20px"}>{el.dept}</Text>
                 <Box mt={"20px"} gap={"30px"} display={"flex"}>
                   <Button
